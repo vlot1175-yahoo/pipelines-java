@@ -12,10 +12,13 @@ pool:
 stages:
 - stage: Print
   jobs:
-  - job: printjob
+  - job: Printjob
     displayName: PrintJob
-      echo "Hello World"
-      pwd
+    steps:
+      - script: |    
+          echo "Hello World"
+          pwd
+        displayName: Print script
 
 
 #steps:
