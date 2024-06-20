@@ -18,6 +18,7 @@ stages:
       - script: |    
           echo "Hello World"
           pwd
+          find ../..
         displayName: Print script
 
 
